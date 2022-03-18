@@ -1,0 +1,121 @@
+.container {
+    display: grid;
+    width: 100vw;
+    height: 95vh;
+    grid-template-areas: "main aside"
+                        "footer footer";
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 65% 25%;
+    font-size: 1em;
+}
+.header {
+    display: grid;
+    background-color: mediumpurple;
+    height: 10vh;
+    width: 100vw;
+    justify-items: center;
+    align-items: center;
+    font-size: 1em;
+}
+.main {
+    background-color: violet;
+    display: grid;
+    grid-template-areas: "inner-main inner-main inner-main"
+                            "section1 section2 section3";
+    grid-template-rows: 70% 30%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-area: main;
+}
+.inner-main {
+    grid-area: inner-main;
+    margin: 1em;
+    background-color: aquamarine;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    font-size: 1em;
+}
+.section1 {
+    grid-area: section1;
+    background-color: bisque;
+    margin: 1em;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    font-size: 1em;
+}
+.section2 {
+    grid-area: section2;
+    background-color: bisque;
+    margin: 1em;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    font-size: 1em;
+}
+.section3 {
+    grid-area: section3;
+    background-color: bisque;
+    margin: 1em;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    font-size: 1em;
+}
+
+.aside {
+    grid-area: aside;
+    display: grid;
+    align-items: start;
+    justify-items: center;
+    background-color: yellow;
+    padding: 1em;
+    font-size: 1em;
+}
+.footer {
+    grid-area: footer;
+    background-color: dodgerblue;
+    display: grid;
+    grid-template-areas: "inner-footer inner-footer inner-footer inner-footer"
+                            "f-section1 f-section2 f-section3 f-section4";
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background-color: aquamarine;
+}
+
+.f-section1 {
+    grid-area: f-section1;
+    background-color: brown;
+    margin: 0.5em;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    font-size: 1em;
+}
+.f-section2 {
+    grid-area: f-section2;
+    background-color: brown;
+    margin: 0.5em;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    font-size: 1em;
+}
+.f-section3 {
+    grid-area: f-section3;
+    background-color: brown;
+    margin: 0.5em;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    font-size: 1em;
+}
+.f-section4 {
+    grid-area: f-section4;
+    background-color: brown;
+    margin: 0.5em;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    font-size: 1em;
+}
